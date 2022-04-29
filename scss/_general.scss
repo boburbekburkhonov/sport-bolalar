@@ -1,38 +1,75 @@
 // bu yerda general CSSlar bor
 
 html {
-    height: 100%;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-  }
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    // font-family: "Arial", sans-serif;
-    line-height: 1.5;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f7fb;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
 
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0)
-  }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+// .hero__none {
+//   display: none;
+// }
+
+// .parents__none {
+//   display: none;
+// }
+
+// .videos__none {
+//   display: none;
+// }
+
+// .games__none {
+//   display: none;
+// }
+
+// .advice__none {
+//   display: none;
+// }
+
+// .territory__none {
+//   display: none;
+// }
+
+// .user__none {
+//   display: none;
+// }
+
+// .famous__none {
+//   display: none;
+// }
+
+// .sites__none {
+//   display: none;
+// }

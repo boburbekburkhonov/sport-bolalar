@@ -1,0 +1,147 @@
+.videos {
+    padding: 0;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        margin: -16px;
+        padding: 0;
+
+    }
+
+    &__item {
+        margin: 16px;
+
+        &-wrapper {
+            max-width: 416px;
+            margin-left: 32px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        transition: all 0.4s;
+    }
+
+    &__link:hover {
+        opacity: 0.8;
+    }
+
+    &__link:active {
+        opacity: 0.4;
+    }
+
+    &__desc {
+        margin: 0;
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125.34%;
+        color: #558EF7;
+
+        &-small {
+            max-width: 416px;
+            margin: 0;
+            margin-bottom: 24px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 125.34%;
+            color: #5D748A;
+        }
+
+        &-orange {
+            margin: 0;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 20px;
+            background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1160px) {
+
+    .videos {
+
+        &__item {
+            max-width: 222px;
+
+            &-wrapper {
+                margin-left: 0;
+            }
+
+            &:nth-child(3) {
+                max-width: 389px;
+            }
+
+            &:nth-child(5) {
+                max-width: 473px;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 682px) {
+
+    .videos {
+
+        &__list {
+            justify-content: center;
+        }
+
+        &__item {
+            max-width: 244px;
+
+            &:nth-child(3) {
+                max-width: 416px;
+            }
+
+            &:nth-child(5) {
+                max-width: 540px;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 559px) {
+
+    .videos {
+
+        &__item {
+            max-width: 344px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .videos {
+
+        &__item {
+            max-width: 315px;
+
+            &:nth-child(3) {
+                max-width: 316px;
+                order: -1;
+            }
+
+            &:nth-child(5) {
+                max-width: 315px;
+            }
+        }
+
+    }
+
+}

@@ -5,20 +5,679 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <title>Sport Bolalar</title>
 </head>
 <body>
     <!-- HEADER -->
-    <header class="header">
 
-    </header>
     <!-- MAIN -->
     <main class="main">
+        <section class="hero__wrapper">
+            <header class="header header--open">
+                <div class="header__line"></div>
 
+                <div class="container header__container">
+                    <a class="header__logo" href="#">
+                        <img src="./images/logo.svg" alt="sport bolalar" width="224" height="56">
+                    </a>
+
+                    <button class="header__hamburger"></button>
+                    <nav class="sitenav">
+
+                        <ul class="sitenav__list">
+                            <li class="sitenav__item">
+                                <a class="sitenav__link sitenav__link-img" href="#">
+                                    <img src="./images/home.png" alt="home" width="24" height="24">
+                                </a>
+                            </li>
+
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">O‘yinlar</a>
+                            </li>
+
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">Infografika</a>
+                            </li>
+
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">Ota-onalar uchun</a>
+                            </li>
+
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">To‘garaklar</a>
+                            </li>
+
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">Videoblog</a>
+                            </li>
+
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">Reyting</a>
+                            </li>
+                        </ul>
+
+                        <div class="sitenav__btn-wrapper">
+                            <div class="sitenav__select-wrapper">
+                                <img src="./images/select.png" alt="select" width="20" height="20">
+                                <select class="sitenav__select">
+                                    <option value="uz">O'zb</option>
+                                    <option value="uz">Eng</option>
+                                    <option value="uz">Rus</option>
+                                </select>
+                            </div>
+                            <a class="button sitenav__button" href="#">Kabinet</a>
+                        </div>
+                    </nav>
+
+                    <div class="header__mobile-bg"></div>
+                </div>
+            </header>
+
+            <div class="hero hero__none">
+                <div class="container hero__container">
+                    <img class="hero__img-orange" src="./images/hero-orange.png" alt="orange" width="122" height="12">
+
+                    <div class="hero__left">
+                        <h1 class="hero__heading">
+                            Sport Bolalar Nigohida
+                            portalida yangi o‘yinimizni qarshi oling!
+                        </h1>
+
+                        <div class="hero__btn-wrapper">
+                            <a class="button__orange hero__button-orange" href="#">O‘yinga o‘tish</a>
+                            <a class="button button__width hero__button" href="#">Batafsil</a>
+                        </div>
+
+                    </div>
+                    <picture>
+                        <!-- <source media="(max-width: 375px)" srcset="./images/lugat-mobile.png"> -->
+
+                        <img class="hero__img-tablet" src="./images/lugat-tablet.png" alt="lugat" width="500" height="494">
+
+                        <img class="hero__img" src="./images/lugat.png" alt="sport lugat" width="722" height="714">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <!-- PARENT -->
+        <section class="parents parents__none">
+            <div class="container parents__container">
+                <h2 class="parents__heading">Ota-onalar sahifasi</h2>
+                <p class="parents__desc">
+                    Ushbu sahifa ota-onalarni bolalar sporti dunyosi bilan tanishtiradi
+                </p>
+                <a class="button__orange parents--button-orange" href="#">Sahifaga o‘tish</a>
+            </div>
+        </section>
+        <!-- VIDEOS -->
+        <section class="videos videos__none">
+            <div class="container videos__container">
+                <ul class="videos__list">
+                    <li class="videos__item">
+                        <a class="videos__link" href="#">
+                            <img src="./images/futbol.png" alt="futbol" width="304" height="216">
+                        </a>
+                    </li>
+
+                    <li class="videos__item">
+                        <a class="videos__link videos__link-width" href="#">
+                            <img src="./images/kuch.png" alt="futbol" width="304" height="216">
+                        </a>
+                    </li>
+
+                    <li class="videos__item">
+                        <div class="videos__item-wrapper">
+                            <p class="videos__desc">Videoblog</p>
+                            <p class="videos__desc-small">
+                                Bolalar sportiga tegishli videolavhalar ushbu blogdan joy olgan.
+                            </p>
+                            <p class="videos__desc-orange">Barcha videolar</p>
+                        </div>
+                    </li>
+
+                    <li class="videos__item">
+                        <a class="videos__link" href="#">
+                            <img src="./images/osmirlar.png" alt="futbol" width="304" height="216">
+                        </a>
+                    </li>
+
+                    <li class="videos__item videos__item-width">
+                        <a class="videos__link" href="#">
+                            <img src="./images/mirziyoyev.png" alt="futbol" width="640" height="464">
+                        </a>
+                    </li>
+
+                    <li class="videos__item">
+                        <a class="videos__link" href="#">
+                            <img src="./images/stadion.png" alt="futbol" width="304" height="216">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        <!-- GAMES -->
+        <section class="games games__none">
+            <div class="container games__container">
+                <p class="games__desc">O‘yinlar</p>
+
+                <ul class="games__list">
+                    <li class="games__item">
+                        <a class="games__link" href="#">
+                            <img src="./images/lampochka.png" alt="lampochka" width="304" height="200">
+                        </a>
+                    </li>
+
+                    <li class="games__item">
+                        <a class="games__link" href="#">
+                            <img src="./images/yes-or-no.png" alt="lampochka" width="416" height="260">
+                        </a>
+                    </li>
+
+                    <li class="games__item">
+                        <a class="games__link" href="#">
+                            <img src="./images/test-sport.png" alt="lampochka" width="304" height="200">
+                        </a>
+                    </li>
+                </ul>
+
+                <img class="games__img" src="./images/gamesselect.png" alt="select" width="156" height="12">
+            </div>
+        </section>
+        <!-- ADVICE -->
+        <section class="advice advice__none">
+            <div class="container advice__container">
+                <div class="advice__top">
+                    <h2 class="advice__heading">Sport maslahatlari</h2>
+                    <p class="advice__desc">
+                        O‘zingizga qiziq bo’lgan sportga taaluqli barcha ma’lumotlarga ega bo‘ling.
+                    </p>
+                </div>
+
+                <ul class="advice__list">
+                    <li class="advice__item">
+                        <p class="advice__list-desc">
+                            Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang
+                        </p>
+                        <p class="advice__list-desc-small">
+                            Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya
+                        </p>
+                    </li>
+
+                    <li class="advice__item advice__item-active">
+                        <p class="advice__list-desc">
+                            Mashq qilayotganingizda albatta yengil mashqlardan boshlang
+                        </p>
+                        <p class="advice__list-desc-small">
+                            Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya
+                        </p>
+                    </li>
+
+                    <li class="advice__item">
+                        <p class="advice__list-desc">
+                            Imkon qadar uy sharoitida tosh ko‘tarishdan yiroqroq bo‘ling
+                        </p>
+                        <p class="advice__list-desc-small">
+                            Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya
+                        </p>
+                    </li>
+                </ul>
+
+                <div class="advice__img-wrapper">
+                    <img class="advice__img" src="./images/advice.png" alt="select" width="418" height="40">
+
+                    <img class="advice__img-mobile" src="./images/advice-mobile.png" alt="select" width="132" height="40">
+                </div>
+            </div>
+        </section>
+        <!-- TERRITORY -->
+        <section class="territory territory__none">
+            <div class="container territory__container">
+                <img class="territory__img" src="./images/territory.png" alt="baby" width="787" height="661">
+
+                <img class="territory__img-tablet" src="./images/territory-boy.png" alt="boy" width="473" height="426">
+
+                <img class="territory__img-black" src="./images/territory-bola.png" alt="bola" width="611" height="551">
+
+                <div class="territory__right">
+                    <div class="territory__right-top">
+                        <h2 class="territory__heading">
+                            Hududingizdagi
+                            sport inshootlari
+                        </h2>
+
+                        <select class="territory__select">
+                            <option value="toshkent">
+                                Toshkent shahri
+                            </option>
+                            <option selected value="toshkent">
+                                Shahrisabz shahri
+                            </option>
+                        </select>
+                    </div>
+
+                    <ul class="territory__list">
+                        <li class="territory__item">
+                            <img src="./images/futbol-territory.png" alt="koptog" width="60" height="60">
+
+                            <p class="territory__list-desc">
+                                Futbol
+                                maydonlari
+                            </p>
+                        </li>
+
+                        <li class="territory__item">
+                            <img src="./images/tennis.png" alt="koptog" width="60" height="60">
+
+                            <p class="territory__list-desc">
+                                Tennis kortlari
+                            </p>
+                        </li>
+
+                        <li class="territory__item">
+                            <img src="./images/suzish.png" alt="koptog" width="60" height="60">
+
+                            <p class="territory__list-desc">
+                                Suzish
+                                havzalari
+                            </p>
+                        </li>
+
+                        <li class="territory__item">
+                            <img src="./images/gimnastika.png" alt="koptog" width="60" height="60">
+
+                            <p class="territory__list-desc">
+                                Gimnastika
+                                komplekslari
+                            </p>
+                        </li>
+
+                        <li class="territory__item">
+                            <img src="./images/yugugrish.png" alt="koptog" width="60" height="60">
+
+                            <p class="territory__list-desc">
+                                Yugurish
+                                maydonlari
+                            </p>
+                        </li>
+
+                        <li class="territory__item territory__item-active">
+                            <img src="./images/boshqa.png" alt="koptog" width="60" height="60">
+
+                            <p class="territory__list-desc">
+                                Boshqa
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="territory__bottom">
+                        <span class="territory__bottom-span">27</span>
+
+                        <div class="territory__bottom-wrapper">
+                            <p class="territory__bottom-desc">ta</p>
+                            <p class="territory__bottom-desc-big">
+                                Suzish havzalari mavjud
+                            </p>
+                        </div>
+                        <span class="territory__bottom-span-orange">
+                            Batafsil ko‘rish
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- USER -->
+        <section class="user user__none">
+            <div class="container user__container">
+                <img class="user__img" src="./images/kubok.png" alt="kobok" width="435" height="417">
+
+                <img class="user__img-tablet" src="./images/kubok-tablet.png" alt="kubok" width="389" height="373">
+
+                <img class="user__img-mobile" src="./images/user-mobile.png" alt="kubok" width="305" height="292">
+
+                <div class="user__right">
+                    <div class="user__right-top">
+                        <p class="user__desc">Top-3 foydalanuvchi</p>
+                        <span class="territory__bottom-span-orange user__span">
+                            Batafsil ko‘rish
+                        </span>
+                    </div>
+
+                    <ul class="user__list">
+                        <li class="user__item">
+                            <img class="user__list-img-girl" src="./images/girl.png" alt="girl" width="58" height="54">
+
+                         <div class="user__desc-mobile">
+                            <div class="user__desc-wrapper">
+                                <p class="user__list-desc">
+                                    Mirzakhalilova Madina
+                                </p>
+                                <p class="user__list-desc-blue">
+                                    sport lug‘ati
+                                </p>
+                            </div>
+
+                            <div class="user__span-wrapper">
+                                <img src="./images/yulduz.png" alt="yulduz" width="34" height="31">
+
+                                <span class="user__list-span">
+                                    2,365
+                                </span>
+
+                                <img class="user__list-img" src="./images/playstation.png" alt="yulduz" width="34" height="34">
+
+                                <span class="user__list-span">
+                                    2,365
+                                </span>
+                            </div>
+                         </div>
+
+                            <img class="user__list-img-medal" src="./images/medal.svg" alt="medal" width="81" height="99">
+                        </li>
+
+                        <li class="user__item user__item-active">
+                            <img class="user__list-img-girl" src="./images/boy.png" alt="girl" width="58" height="54">
+
+                          <div class="user__desc-mobile">
+                            <div class="user__desc-wrapper">
+                                <p class="user__list-desc">
+                                    Abdullayev Abdubakir
+                                </p>
+                                <p class="user__list-desc-blue">
+                                    futbol
+                                </p>
+                            </div>
+
+                            <div class="user__span-wrapper">
+                                <img src="./images/yulduz.png" alt="yulduz" width="34" height="31">
+
+                                <span class="user__list-span">
+                                    2,365
+                                </span>
+
+                                <img class="user__list-img" src="./images/playstation.png" alt="yulduz" width="34" height="34">
+
+                                <span class="user__list-span">
+                                    2,365
+                                </span>
+                            </div>
+                          </div>
+
+                            <img class="user__list-img-medal" src="./images/kumush.svg" alt="medal" width="70" height="95">
+                        </li>
+
+                        <li class="user__item user__item-active">
+                            <img class="user__list-img-girl" src="./images/boy-young.png" alt="girl" width="58" height="54">
+
+                           <div class="user__desc-mobile">
+                            <div class="user__desc-wrapper">
+                                <p class="user__list-desc">
+                                    Ubaydullayev Odiljon
+                                </p>
+                                <p class="user__list-desc-blue">
+                                    ha yoki yo‘q
+                                </p>
+                            </div>
+
+                            <div class="user__span-wrapper">
+                                <img src="./images/yulduz.png" alt="yulduz" width="34" height="31">
+
+                                <span class="user__list-span">
+                                    2,365
+                                </span>
+
+                                <img class="user__list-img" src="./images/playstation.png" alt="yulduz" width="34" height="34">
+
+                                <span class="user__list-span">
+                                    2,365
+                                </span>
+                            </div>
+                           </div>
+
+                            <img class="user__list-img-medal" src="./images/bronza.svg" alt="medal" width="73" height="97">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- FAMOUS -->
+        <section class="famous famous__none">
+            <div class="container famous__container">
+                <div class="famous__top">
+                    <p class="famous__desc">Mashhur sportchilar</p>
+                    <span class="territory__bottom-span-orange famous__span">
+                        Batafsil ko‘rish
+                    </span>
+                </div>
+
+                <ul class="famous__list">
+                    <li class="famous__item">
+                        <img src="./images/bektemir.png" alt="bektemir" width="192" height="256">
+                    </li>
+
+                    <li class="famous__item">
+                        <img src="./images/ruslan.png" alt="bektemir" width="304" height="380">
+                    </li>
+
+                    <li class="famous__item">
+                        <img src="./images/artur.png" alt="bektemir" width="416" height="504">
+                    </li>
+
+                    <li class="famous__item">
+                        <img src="./images/fazliddin.png" alt="bektemir" width="304" height="380">
+                    </li>
+
+                    <li class="famous__item">
+                        <img src="./images/isroil.png" alt="bektemir" width="192" height="256">
+                    </li>
+                </ul>
+
+                <div class="famous__bottom-img-wrapper">
+                    <img class="famous__bottom-img" src="./images/famous.png" alt="rectangle" width="236" height="12">
+                </div>
+            </div>
+        </section>
+
+        <section class="sites sites__none">
+            <div class="container sites__container">
+                <p class="sites__desc">
+                    BIZNI IJTIMOIY TARMOQLARDA HAM
+                    KUZATING VA OBUNA BO‘LING
+                </p>
+
+                <ul class="sites__list">
+                    <li class="sites__item">
+                        <a class="sites__link" href="#">
+                            <svg width="68" height="68" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><rect x="20" y="10" width="48" height="48" rx="24" fill="#fff"/><path d="M56 26.308c-.892.392-1.843.651-2.835.777a4.893 4.893 0 0 0 2.165-2.719 9.833 9.833 0 0 1-3.12 1.191 4.919 4.919 0 0 0-8.511 3.365c0 .39.032.764.113 1.122-4.09-.2-7.71-2.16-10.141-5.147a4.954 4.954 0 0 0-.673 2.487c0 1.704.877 3.215 2.185 4.089a4.859 4.859 0 0 1-2.223-.606v.054a4.943 4.943 0 0 0 3.942 4.834c-.4.11-.837.162-1.29.162a4.35 4.35 0 0 1-.931-.084c.637 1.949 2.446 3.382 4.597 3.428a9.886 9.886 0 0 1-6.1 2.098c-.404 0-.791-.017-1.178-.067a13.852 13.852 0 0 0 7.548 2.208c9.054 0 14.004-7.5 14.004-14.001 0-.217-.008-.427-.018-.636A9.816 9.816 0 0 0 56 26.308Z" fill="currentColor"/></g><defs><filter id="a" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="10"/><feGaussianBlur stdDeviation="10"/><feColorMatrix values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_250"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1_250" result="shape"/></filter></defs></svg>
+                        </a>
+                    </li>
+
+                    <li class="sites__item">
+                        <a class="sites__link" href="#">
+                            <svg width="68" height="68" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><rect x="20" y="10" width="48" height="48" rx="24" fill="#fff"/><path d="M50 30.25h-4.5v-3a1.5 1.5 0 0 1 1.5-1.5h1.5V22h-3a4.5 4.5 0 0 0-4.5 4.5v3.75h-3V34h3v12h4.5V34h3l1.5-3.75Z" fill="currentColor"/></g><defs><filter id="a" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="10"/><feGaussianBlur stdDeviation="10"/><feColorMatrix values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_252"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1_252" result="shape"/></filter></defs></svg>
+                        </a>
+                    </li>
+
+                    <li class="sites__item">
+                        <a class="sites__link" href="#">
+                            <svg width="68" height="68" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><rect x="20" y="10" width="48" height="48" rx="24" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.384 43.78a1.19 1.19 0 0 0 1.107.144 1.16 1.16 0 0 0 .724-.84c.869-4.084 2.977-14.42 3.768-18.136a.78.78 0 0 0-.26-.758.8.8 0 0 0-.797-.14c-4.193 1.552-17.106 6.397-22.384 8.35a.827.827 0 0 0-.542.8c.012.353.25.66.593.763 2.367.708 5.474 1.693 5.474 1.693s1.452 4.385 2.209 6.615c.095.28.314.5.603.576a.866.866 0 0 0 .811-.207l3.096-2.923s3.572 2.62 5.598 4.062Zm-11.01-8.678 1.679 5.538.373-3.507 10.185-9.186a.277.277 0 0 0 .033-.377.284.284 0 0 0-.376-.064l-11.894 7.596Z" fill="currentColor"/></g><defs><filter id="a" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="10"/><feGaussianBlur stdDeviation="10"/><feColorMatrix values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_1613"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1_1613" result="shape"/></filter></defs></svg>
+                        </a>
+                    </li>
+
+                    <li class="sites__item">
+                        <a class="sites__link" href="#">
+                            <svg width="68" height="68" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><rect x="20" y="10" width="48" height="48" rx="24" fill="#fff"/><path d="M48.5 22h-9a7.5 7.5 0 0 0-7.5 7.5v9a7.5 7.5 0 0 0 7.5 7.5h9a7.5 7.5 0 0 0 7.5-7.5v-9a7.5 7.5 0 0 0-7.5-7.5Zm5.25 16.5a5.256 5.256 0 0 1-5.25 5.25h-9a5.256 5.256 0 0 1-5.25-5.25v-9a5.256 5.256 0 0 1 5.25-5.25h9a5.256 5.256 0 0 1 5.25 5.25v9Z" fill="currentColor"/><path d="M44 28a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm0 9.75A3.755 3.755 0 0 1 40.25 34 3.754 3.754 0 0 1 44 30.25 3.754 3.754 0 0 1 47.75 34 3.755 3.755 0 0 1 44 37.75ZM50.45 28.35a.8.8 0 1 0 0-1.6.8.8 0 0 0 0 1.6Z" fill="currentColor"/></g><defs><filter id="a" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="10"/><feGaussianBlur stdDeviation="10"/><feColorMatrix values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_256"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1_256" result="shape"/></filter></defs></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__left">
+                <a class="footer__left-link" href="#">
+                    <img src="./images/logo.svg" alt="logo" width="224" height="56">
+                </a>
 
+                <p class="footer__left-desc">
+                    Portalda eʼlon qilingan materiallardan nusxa koʻchirish, tarqatish va boshqa shakllarda  foydalanish faqat tahririyat yozma roziligi bilan amalga oshirilishi mumkin.
+                </p>
+            </div>
+
+            <ul class="footer__list footer__list-first">
+                <li class="footer__item">
+                    <a class="footer__link footer__link-active" href="#">
+                        Bo‘limlar
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        O‘yinlar
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        Infografika
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        Ota-onalar uchun
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        Videoblog
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        Reyting
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer__list footer__list-second">
+                <li class="footer__item">
+                    <a class="footer__link footer__link-active" href="#">
+                        O‘yin va sinovlar
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        10 bosqichdan iborat sport test
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        O‘ylab toping
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        Ha yoki yo‘q
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        Sport lug‘ati
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer__list footer__list-third">
+                <li class="footer__item">
+                    <a class="footer__link footer__link-active" href="#">
+                        Foydali sahifalar
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        Reyting
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        Bog‘lanish
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        F.A.Q
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        Foydalanish shartlari
+                    </a>
+                </li>
+            </ul>
+
+            <div class="footer__bottom-wrapper">
+                <p class="footer__bottom-desc">
+                    Sport Bolalar Nigohida © 2020. Barcha huquqlar himoyalangan.
+                </p>
+                <div class="footer__uic">
+                    <p class="footer__uic-desc">
+                        Designed and developed by
+                    </p>
+                    <span class="footer__uic-span">UIC</span>
+                    <p class="footer__uic-desc-last">Development</p>
+                </div>
+
+
+                <div class="footer__bottom-right">
+                    <p class="footer__bottom-right-desc">
+                        Biz ijtimoiy tarmoqlarda
+                    </p>
+
+                    <ul class="footer__bottom-list">
+                        <li class="footer__bottom-item">
+                            <a class="footer__bottom-link" href="#">
+                                <svg width="88" height="88" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><rect x="20" y="10" width="48" height="48" rx="24" fill="#fff"/><path d="M56 26.308c-.892.392-1.843.651-2.835.777a4.893 4.893 0 0 0 2.165-2.719 9.833 9.833 0 0 1-3.12 1.191 4.919 4.919 0 0 0-8.511 3.365c0 .39.032.764.113 1.122-4.09-.2-7.71-2.16-10.141-5.147a4.954 4.954 0 0 0-.673 2.487c0 1.704.877 3.215 2.185 4.089a4.859 4.859 0 0 1-2.223-.606v.054a4.943 4.943 0 0 0 3.942 4.834c-.4.11-.837.162-1.29.162a4.35 4.35 0 0 1-.931-.084c.637 1.949 2.446 3.382 4.597 3.428a9.886 9.886 0 0 1-6.1 2.098c-.404 0-.791-.017-1.178-.067a13.852 13.852 0 0 0 7.548 2.208c9.054 0 14.004-7.5 14.004-14.001 0-.217-.008-.427-.018-.636A9.816 9.816 0 0 0 56 26.308Z" fill="currentColor"/></g><defs><filter id="a" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="10"/><feGaussianBlur stdDeviation="10"/><feColorMatrix values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_250"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1_250" result="shape"/></filter></defs></svg>
+                            </a>
+                        </li>
+
+                        <li class="footer__bottom-item">
+                            <a class="footer__bottom-link" href="#">
+                                <svg width="88" height="88" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><rect x="20" y="10" width="48" height="48" rx="24" fill="#fff"/><path d="M50 30.25h-4.5v-3a1.5 1.5 0 0 1 1.5-1.5h1.5V22h-3a4.5 4.5 0 0 0-4.5 4.5v3.75h-3V34h3v12h4.5V34h3l1.5-3.75Z" fill="currentColor"/></g><defs><filter id="a" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="10"/><feGaussianBlur stdDeviation="10"/><feColorMatrix values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_252"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1_252" result="shape"/></filter></defs></svg>
+                            </a>
+                        </li>
+
+                        <li class="footer__bottom-item">
+                            <a class="footer__bottom-link" href="#">
+                                <svg width="88" height="88" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><rect x="20" y="10" width="48" height="48" rx="24" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.384 43.78a1.19 1.19 0 0 0 1.107.144 1.16 1.16 0 0 0 .724-.84c.869-4.084 2.977-14.42 3.768-18.136a.78.78 0 0 0-.26-.758.8.8 0 0 0-.797-.14c-4.193 1.552-17.106 6.397-22.384 8.35a.827.827 0 0 0-.542.8c.012.353.25.66.593.763 2.367.708 5.474 1.693 5.474 1.693s1.452 4.385 2.209 6.615c.095.28.314.5.603.576a.866.866 0 0 0 .811-.207l3.096-2.923s3.572 2.62 5.598 4.062Zm-11.01-8.678 1.679 5.538.373-3.507 10.185-9.186a.277.277 0 0 0 .033-.377.284.284 0 0 0-.376-.064l-11.894 7.596Z" fill="currentColor"/></g><defs><filter id="a" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="10"/><feGaussianBlur stdDeviation="10"/><feColorMatrix values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_1613"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1_1613" result="shape"/></filter></defs></svg>
+                            </a>
+                        </li>
+
+                        <li class="footer__bottom-item">
+                            <a class="footer__bottom-link" href="#">
+                                <svg width="88" height="88" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><rect x="20" y="10" width="48" height="48" rx="24" fill="#fff"/><path d="M48.5 22h-9a7.5 7.5 0 0 0-7.5 7.5v9a7.5 7.5 0 0 0 7.5 7.5h9a7.5 7.5 0 0 0 7.5-7.5v-9a7.5 7.5 0 0 0-7.5-7.5Zm5.25 16.5a5.256 5.256 0 0 1-5.25 5.25h-9a5.256 5.256 0 0 1-5.25-5.25v-9a5.256 5.256 0 0 1 5.25-5.25h9a5.256 5.256 0 0 1 5.25 5.25v9Z" fill="currentColor"/><path d="M44 28a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm0 9.75A3.755 3.755 0 0 1 40.25 34 3.754 3.754 0 0 1 44 30.25 3.754 3.754 0 0 1 47.75 34 3.755 3.755 0 0 1 44 37.75ZM50.45 28.35a.8.8 0 1 0 0-1.6.8.8 0 0 0 0 1.6Z" fill="currentColor"/></g><defs><filter id="a" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="10"/><feGaussianBlur stdDeviation="10"/><feColorMatrix values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_256"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1_256" result="shape"/></filter></defs></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__line"></div>
     </footer>
+
+    <script src="./js/aps.js"></script>
 </body>
 </html>

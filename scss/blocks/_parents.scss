@@ -1,0 +1,136 @@
+.parents {
+    padding-bottom: 64px;
+
+    &__container {
+        padding: 40px 0;
+        padding-left: 111px;
+        background: #566B80;
+        background-image: url(../images/family.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% + 350px);
+        border-radius: 16px;
+    }
+
+    &__heading {
+        max-width: 275px;
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 162.5%;
+        letter-spacing: 0.12px;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        max-width: 406px;
+        margin: 0;
+        margin-bottom: 36px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 162.5%;
+        letter-spacing: 0.12px;
+        color: #FFFFFF;
+    }
+
+}
+
+@media only screen and (max-width: 1340px) {
+
+    .parents {
+        padding-top: 70px;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .parents {
+        padding-top: 50px;
+
+        &__container {
+            background-position: top 10px right 40px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .parents {
+        padding-top: 50px;
+
+        &__container {
+            padding-left: 84px;
+        }
+
+        &__desc {
+            max-width: 396px;
+            margin-bottom: 10px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 814px) {
+
+    .parents {
+        padding-top: 50px;
+
+        &__container {
+            background-position: top 10px right 10px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 790px) {
+
+    .parents {
+        &__container {
+            background-image: none;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 638px) {
+
+    .parents {
+        padding-top: 40px;
+
+        &__container {
+            padding: 20px 20px;
+        }
+
+        &__desc {
+            max-width: 275px;
+            max-width: 100%;
+            margin-bottom: 13px;
+        }
+
+        &--button-orange {
+            max-width: 275px;
+            max-width: 100%;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+
+    .parents {
+
+        &__container {
+            padding-left: 44px;
+        }
+
+    }
+
+}

@@ -1,0 +1,262 @@
+.territory {
+    padding-top: 88px;
+    padding-bottom: 124px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        max-width: 611px;
+
+        &-black {
+            display: none;
+        }
+
+        &-tablet {
+            display: none;
+        }
+    }
+
+    &__right {
+        max-width: 473px;
+        margin-left: 82px;
+    }
+
+    &__right-top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+
+    &__heading {
+        max-width: 238px;
+        margin: 0;
+        margin-right: 77px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125.34%;
+        color: #558EF7;
+    }
+
+    &__select {
+        max-width: 183px;
+        max-width: 100%;
+        max-height: 53px;
+        padding: 13px 14px;
+        padding-right: 49px;
+        background: #FFFFFF;
+        border-radius: 50px;
+        border: 2px solid #FD9246;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        color: #4A4952;
+        appearance: none;
+        background-image: url(../../images/select-territory.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    &__select:focus {
+        outline: none;
+        border: 2px solid #FD9246;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        margin: -16px;
+        padding: 0;
+
+        &-desc {
+            max-width: 112px;
+            margin: 0;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 125.34%;
+            color: #5D748A;
+        }
+
+        &-desc:hover {
+            color: dodgerblue;
+        }
+    }
+
+    &__item {
+        max-width: 192px;
+        display: flex;
+        margin: 16px;
+
+        &-active {
+            align-items: center;
+        }
+    }
+
+    &__bottom {
+        max-width: 473px;
+        padding-left: 20px;
+        margin-top: 48px;
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+        border-radius: 16px;
+
+        &-span {
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 125.34%;
+            color: #558EF7;
+
+            &-orange {
+                margin-left: 40px;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 20px;
+                background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background-image: url(../images/strelka.png);
+                    position: relative;
+                    top: 5px;
+                }
+
+            }
+        }
+
+        &-wrapper {
+            margin-left: 12px;
+        }
+
+        &-desc {
+            margin: 0;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130.3%;
+            color: #5D748A;
+            opacity: 0.5;
+
+            &-big {
+                margin: 0;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 125.34%;
+                color: #5D748A;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1260px) {
+
+    .territory {
+
+        &__right {
+            margin-left: 42px;
+        }
+
+        &__select {
+            display: none;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1070px) {
+
+    .territory {
+
+        &__img {
+            display: none;
+
+            &-tablet {
+                display: inline-block;
+            }
+        }
+
+        &__heading {
+            max-width: 209px;
+            font-size: 28px;
+            line-height: 125.34%;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 828px) {
+
+    .territory {
+        padding-top: 0;
+        padding-bottom: 30px;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__img-tablet {
+            display: none;
+        }
+
+        &__img-black {
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+
+        &__right {
+            margin-left: 0;
+        }
+
+        &__heading {
+            margin: 0 auto;
+            max-width: 250px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 370px) {
+
+    .territory {
+
+        &__right {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            margin-left: 0;
+        }
+
+        // &__heading {
+        //     max
+        // }
+
+        &__list {
+            max-width: 282px;
+
+            &-desc {
+                max-width: 198px;
+            }
+        }
+
+        &__bottom {
+            max-width: 315px;
+        }
+
+    }
+
+}

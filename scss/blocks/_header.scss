@@ -1,1 +1,259 @@
 // bu yerda header bor
+.header {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(4px);
+
+    &__line {
+        height: 4px;
+        background: #7569DE;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 20px;
+    }
+
+    &__logo {
+        text-decoration: none;
+        flex-shrink: 0;
+    }
+
+    &__logo:hover {
+        opacity: 0.8;
+    }
+
+    &__logo:active {
+        opacity: 0.4;
+    }
+
+    &__hamburger {
+        display: none;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        background-image: url(../../images/menu.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+.sitenav {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    &__list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        margin-right: 64px;
+        padding: 0;
+    }
+
+    &__item + &__item {
+        margin-left: 32px;
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        color: #5D748A;
+    }
+
+    &__link:hover {
+        opacity: 0.8;
+    }
+
+    &__link:active {
+        opacity: 0.4;
+    }
+
+    &__select-wrapper {
+        display: flex;
+        margin-right: 24px;
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__select {
+        appearance: none;
+        margin-left: 6px;
+        border: none;
+    }
+
+    &__select:focus {
+        outline: none;
+        border: transparent;
+    }
+
+    &__button::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/contact.png);
+        position: relative;
+        top: 3px;
+        margin-right: 8px;
+    }
+
+    &__mobile-bg {
+        // display: none;
+        position: absolute;
+        top: 610px;
+        left: 0;
+        width: 100vh;
+        height: 100vh;
+        background: rgba(93, 116, 138, 0.7);
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .sitenav {
+
+        &__list {
+            margin-right: 22px;
+        }
+
+        &__item + &__item {
+            margin-left: 22px;
+        }
+
+        &__select-wrapper {
+            margin-right: 12px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1190px) {
+
+
+    .sitenav {
+
+        &__list {
+            margin-right: 12px;
+        }
+
+        &__item + &__item {
+            margin-left: 14px;
+        }
+
+        &__select-wrapper {
+            margin-right: 10px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1136px) {
+
+    .header {
+
+        &__hamburger {
+            display: inline-block;
+            margin-left:  auto;
+            flex-shrink: 0;
+        }
+
+    }
+
+    .sitenav {
+
+        &__list {
+            display: none;
+        }
+
+        &__btn-wrapper {
+            margin-left: 24px;
+        }
+
+        &__select-wrapper {
+            margin-right: 24px;
+        }
+    }
+
+    .header--open .sitenav__list {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 30px 0;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+        backdrop-filter: blur(4px);
+    }
+
+    .header--open .header__hamburger {
+        background-image: url(../images/xmark-solid.svg);
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .sitenav {
+        position: relative;
+        display: none;
+
+        &__item + &__item {
+            margin-top: 13px;
+        }
+    }
+
+
+    .header--open .sitenav {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 30px 0;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+        backdrop-filter: blur(4px);
+    }
+
+    .header--open .sitenav__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header--open .header__mobile-bg {
+        display: inline-block;
+        z-index: -99px;
+    }
+
+}
+
+@media only screen and (max-width: 638px) {
+
+    .sitenav {
+
+        &__link {
+            font-weight: 700;
+        }
+
+    }
+
+
+}

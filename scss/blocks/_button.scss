@@ -1,1 +1,50 @@
 // bu yerda button bor
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px;
+    max-width: 119px;
+    width: 100%;
+    background: #FFFFFF;
+    text-align: center;
+    border: 2px solid #F48F43;
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #5D748A;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.4;
+    }
+
+    &__width {
+        max-width: 151px;
+        padding: 13px 8px;
+    }
+
+    &__orange {
+        max-width: 151px;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        padding: 13px 8px;
+        background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
+        box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+        border-radius: 50px;
+        color: #FFFFFF;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.4;
+        }
+    }
+}
